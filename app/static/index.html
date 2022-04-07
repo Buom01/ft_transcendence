@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Chat system</title>
+	</head>
+	<body>
+		<div id="connectionModal" class="modal">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<form  id="connection" class="modal-body">
+						<div id="alert" class="alert alert-info" role="alert"></div>
+						<div class="mc-3">
+							<label for="username" class="form-label">Username</label>
+							<input id="username" type="text" class="form-control"/>
+						</div>
+						<div class="mc-3">
+							<label for="password" class="form-label">Password</label>
+							<input id="password" type="text" class="form-control"/>
+						</div>
+						<div class="mc-3">
+							<button class="btn btn-primary" type="submit">Connect</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid max-height">
+			<div class="row max-height">
+				<div id="channel-list" class="col-3 max-height channel-list">
+				</div>
+				<div id="channel-message" class="col-9 max-height channel-message">
+						<div id="message-print">
+						</div>
+						<form id="sendMessage" class="jumbotron" style="display: flex;">
+							<textarea id="message" class="form-control marg" placeholder="Your Message Here"></textarea>
+							<button id="send" class="btn btn-success marg">Send</button>
+						</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<link rel="stylesheet" href="bootstrap.css"/>
+	<link rel="stylesheet" href="main.css"/>
+	<script src="bootstrap.js"></script>
+	<script src="socket.io.js"></script>
+	<script src="main.js"></script>
+</html>

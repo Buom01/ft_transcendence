@@ -1,0 +1,71 @@
+html {
+	height: 100%;
+}
+body {
+	height: inherit;
+	background-color: rgb(51, 51, 51);
+	color: white;
+}
+.modal {
+	color: black;
+}
+.max-height {
+	height: inherit !important;
+}
+
+.channel-list {
+	background-color: #4d4d4d;
+	border-right: solid 1px #959595;
+	overflow-y: auto;
+	padding: 0;
+}
+.channel-element {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	background-color: coral;
+	min-height: 3em;
+	font-size: x-large;
+	cursor: pointer;
+}
+.channel-element:nth-child(even) {
+	background-color: rgb(59, 177, 118);
+}
+
+
+.channel-message {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: .5em;
+}
+#message-print {
+	margin-bottom: .5em;
+	overflow-y: auto;
+}
+
+.marg {
+	margin-bottom: 1em;
+}
+.mess {
+	height: inherit;
+	display: flex;
+	flex-direction: column;
+}
+.message {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: .5em;
+}
+.you {
+	background-color: #378a2f;
+}
+.error {
+	background-color: #c92929;
+}
+.message > * {
+	margin: 0;
+	padding: 0;
+}
