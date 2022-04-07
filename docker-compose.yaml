@@ -6,13 +6,14 @@ services:
     container_name: app
     restart: unless-stopped
     depends_on:
+      - redis
       - postgres
     ports:
       - ${APP_PORT}:${APP_PORT}
     build:
-      target: development
       context: .
-      dockerfile: ./docker/Dockerfile
+      dockerfile: ./Dockerfile
+      target: development
     volumes:
       - .:/usr/src/app
       - /usr/src/app/node_modules

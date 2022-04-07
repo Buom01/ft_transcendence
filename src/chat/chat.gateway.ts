@@ -21,9 +21,8 @@ export class ChatGateway
   private logger: Logger = new Logger('AppGateway');
 
   //#region Channel
-  @SubscribeMessage('chat::channel::')
-  channelGet(client: Socket, payload: string): void {
-  }
+  //@SubscribeMessage('chat::channel::')
+  //channelGet(client: Socket, payload: string): void {}
 
   //#endregion Channel
 

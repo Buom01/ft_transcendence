@@ -3,8 +3,12 @@
   "version": "0.0.1",
   "description": "",
   "contributors": [
-    { "name" : "Clément Bertrand" },
-    { "name" : "ADD NAME" }
+    {
+      "name": "Clément Bertrand"
+    },
+    {
+      "name": "ADD NAME"
+    }
   ],
   "private": true,
   "license": "GPL-3.0",
@@ -25,6 +29,7 @@
   },
   "dependencies": {
     "@nestjs/common": "^8.0.0",
+    "@nestjs/config": "^2.0.0",
     "@nestjs/core": "^8.0.0",
     "@nestjs/platform-express": "^8.0.0",
     "@nestjs/platform-socket.io": "^8.4.4",
