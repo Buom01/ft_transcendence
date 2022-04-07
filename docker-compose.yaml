@@ -1,7 +1,7 @@
 version: '3.3'
 
 services:
-  ################ Website ################
+  ################## Website #################
   app:
     container_name: app
     restart: unless-stopped
@@ -33,7 +33,7 @@ services:
   postgres:
     container_name: postgres
     restart: unless-stopped
-    image: postgres:14
+    image: postgres:latest
     ports:
       - ${DB_PORT}:${DB_PORT}
     environment:
@@ -49,5 +49,6 @@ services:
       - webnet
 networks:
   webnet:
+    driver: bridge
 volumes:
   pgdata:
