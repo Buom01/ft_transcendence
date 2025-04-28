@@ -7,6 +7,7 @@
 		@keydown.enter="handleCtrlEnter"
 	>
 		<q-editor
+			class="chat-wrap"
 			:placeholder="$t('chat.editor.placeholder')"
 			:disable="disableForm"
 			square
@@ -597,6 +598,9 @@ export default defineComponent({
 		padding: .5em;
 		overflow-x: auto;
 		z-index: 2;
+	}
+	.chat-wrap {
+		word-wrap: anywhere;
 	}
 	.q-message-name {
 		color: white;

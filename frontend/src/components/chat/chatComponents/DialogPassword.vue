@@ -27,7 +27,7 @@
 					@submit="verify"
 				>
 					<q-input
-						type="text"
+						type="password"
 						autofocus
 						filled
 						v-model="password"
