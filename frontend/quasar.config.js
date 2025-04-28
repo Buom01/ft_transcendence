@@ -83,6 +83,9 @@ module.exports = configure(() =>
 			}
 		},
 
+		// https://quasar.dev/quasar-cli-vite/prefetch-feature
+		preFetch: false,
+
 		// https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#devServer
 		devServer: {
 			https: false,

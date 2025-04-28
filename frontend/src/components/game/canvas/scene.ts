@@ -123,7 +123,10 @@ class PongScene
 			targetElem: document.body,
 			onReady: null,
 			onProgress: undefined,
-			onError: (_message: string) => {},
+			onError: (_message: string) => // eslint-disable-line @typescript-eslint/no-unused-vars
+			{
+				// Hello
+			},
 			onMove: null,
 			onStateChange: null
 		}, options);
